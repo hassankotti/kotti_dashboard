@@ -1,11 +1,20 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: "475px",
+        //...defaultTheme.screens,
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      transitionProperty: ["responsive", "motion-safe", "motion-reduce", ],
+    },
   },
-  plugins: [],
-}
+  plugins: [require("tailwind-scrollbar-hide")],
+};

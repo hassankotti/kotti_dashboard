@@ -1,7 +1,20 @@
 {
+  "name": "kotti_dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/css/style.css"
+  },
+  "keywords": [],
+  "author": "Hassan Kotti",
+  "license": "",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.0.3"
   }
 }
